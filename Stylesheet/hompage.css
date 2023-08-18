@@ -621,9 +621,12 @@ footer{
     text-decoration: none;
     color: var(--white-color);
 }
-footer>p{
+.icon>p{
     font-size: 0.75rem;
     color: var(--white-color);
+}
+.icon>.icons{
+    display: none;
 }
 @media (min-width:532px){
     .menu-list{
@@ -674,21 +677,6 @@ footer>p{
         padding: 1.93rem 2.06rem;
         margin-bottom: 1.875rem;
     }
-    .statement{
-        font-size: 1rem;
-        padding: 0.5rem 1.875rem;
-    }
-    .mission-action>a{
-        font-size: 1rem;
-    }
-    .mission-action>button{
-        font-size: 1rem;
-        padding: 0.5rem 1.875rem;
-    }
-    .logo-wrapper{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .interface{
         display: none;
     }
@@ -720,6 +708,24 @@ footer>p{
         color: var(--white-color);
         padding: 0.5rem;
     }
+    .mission>h1{
+        font-size: 1.75rem;
+        line-height: 2.7rem;
+    }
+    .mission>p{
+        font-size: 1rem;
+    }
+    .statement{
+        font-size: 1rem;
+        padding: 0.5rem 1.875rem;
+    }
+    .mission-action>a{
+        font-size: 1rem;
+    }
+    .mission-action>button{
+        font-size: 1rem;
+        padding: 0.5rem 1.875rem;
+    }
     .client>button{
         font-size: 1rem;
         padding: 0.5rem 1.875rem;
@@ -729,6 +735,96 @@ footer>p{
     }
     .client>p{
         font-size: 1rem;
+    }
+    .logo-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .desc, .slack, .shopify{
+        justify-self: center;
+    }
+    .elastic{
+        justify-self: end;
+    }
+    .loom{
+        grid-column: 3 / 4;
+        justify-self: start;
+    }
+    .testimonial-section>button{
+        font-size: 1rem;
+        margin-bottom: 1.18rem;
+    }
+    .testimonial-section>h1{
+        font-size: 2.25rem;
+        margin-top: 0rem;
+    }
+    .testimonial-content{
+        padding: 1.625rem 2.375rem;
+    }
+    .testimonial-image{
+        margin-bottom: 2.875rem;
+    }
+    .testimonial-content>h2{
+        font-size: 1.5rem;
+    }
+    .testimonial-content>h3{
+        font-size: 1.5rem;
+    }
+    .testimonial-content>nav{
+        margin-top: 1.12rem;
+    }
+    .blogs-wrapper>button{
+        font-size: 1rem;
+        margin-bottom: 1.875rem;
+    }
+    .blogs-wrapper>h1{
+        font-size: 2.25rem;
+        margin-bottom: 1.875rem;
+    }
+    .sub>button{
+        position: relative;
+        top: -80%;
+        left: 49%;
+        transform: translate(-50%, -152%);
+    }
+    .sub>img{
+        width: 3.625rem;
+        height: 3.5rem;
+        margin-bottom: 2.125rem;
+    }
+    .sub>h3{
+        font-size: 2rem;
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+    .sub>p{
+        font-size: 1.25rem;
+        margin-bottom: 3.125rem;
+    }
+    .sub{
+        padding: 4rem;
+    }
+    footer{
+        padding:2.5rem 4.25rem 2rem 4.45rem;
+    }
+    .footer-heading{
+        float: left;
+        border: none;
+    }
+    .footer-list{
+        text-align: right;
+        border-top: 1px solid var(--white-color);
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon>.icons{
+        display: block;
+        padding-top: 0.75rem;
+    }
+    .icons>i{
+        margin-left: 1.25rem;
     }
 }
 @media (min-width:768px){
