@@ -23,12 +23,13 @@ body{
 .main-head{
     display: inline-flex;
     width: 100%;
+    height: fit-content;
     background-color: var(--dark-color);
     padding: 5px 11px;
     border-radius: 47px;
 }
 .main-head>img{
-    margin-top: 19.8px;
+    margin-top: 0.25rem;
     height: 14px;
     object-fit: cover;
 }
@@ -52,16 +53,17 @@ body{
     color: var(--white-color);
     font-weight: 700;
     font-size: 0.669rem;
+    height: fit-content;
+}
+.heading>h1{
+    margin: 0rem;
 }
 .menu{
-    margin-left: auto;   
-}
-.menu>img{
-    margin-top: 12px;
+    margin-left: auto;
+    height: fit-content;   
 }
 .menu>button{
     text-align: center;
-    margin-top: 1.25rem;
     border-radius: 1.25rem;
     padding: 0.5rem 1.875rem;
     font-size: 1rem;
@@ -407,6 +409,8 @@ body{
     height: fit-content;
 }
 .trusted>p{
+    font-size: 1rem;
+    color: var(--gray-color);
     margin: 0rem;
     width: fit-content;
     position: absolute;
@@ -418,6 +422,7 @@ body{
 }
 hr{
     width: 100%;
+    color: var(--gray-color);
     height: 1px;
     margin: 0rem;
     position: relative;
@@ -470,6 +475,7 @@ hr{
     text-align: left;
     border: 1px solid var(--border-color);
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 .blogs-1>img{
     object-fit: cover;
@@ -614,7 +620,7 @@ footer{
 }
 .footer-list li{
     display: inline-block;
-    padding-right:1.25rem;
+    padding-left:1.25rem;
     font-size: 1rem;
 }
 .footer-list a{
@@ -629,13 +635,19 @@ footer{
     display: none;
 }
 @media (min-width:532px){
+    .main-head{
+        padding: 0.75rem 1.25rem;
+    }
     .menu-list{
         display: inline;
+        height: fit-content;
+    }
+    .menu-list>ul{
+        margin: 0rem;
     }
     .main-head>img{
-        margin-top: 1rem;
-        height: 24px;
-        width: 28px;
+        height: 20px;
+        width: 24px;
     }
     .heading{
         font-size: 0.75rem;
@@ -815,6 +827,9 @@ footer{
         text-align: right;
         border-top: 1px solid var(--white-color);
     }
+    .footer-list li{
+        padding-left: 0.5rem;
+    }
     .icon{
         display: flex;
         justify-content: space-between;
@@ -835,10 +850,13 @@ footer{
         font-size: 1rem;
     }
     .main-head>img{
-        margin-top: 1.6rem;
+        margin-top: 0.4rem;
+        height: 1.5rem;
+        width: 1.75rem;
     }
     .menu>button{
         display: block;
+        margin-top: 0.2rem;
     }
     .menu>img{
         display: none;
@@ -886,6 +904,32 @@ footer{
     .client>h1{
         font-size: 2.25rem;
         padding-bottom: 1.25rem;
+    }
+    .testimonial-content{
+        margin-bottom: 3.125rem;
+    }
+    .air, .out, .razo, .discord, .drop{
+        width: 10.18rem;
+        height: 2.9rem;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+    }
+    .sub>h3{
+        font-size: 3rem;
+    }
+    .sub{
+        padding: 8rem;
+    }
+}
+@media (min-width:1000px){
+    .heading{
+        font-size: 1.25rem;
+    }
+    .main-head>img{
+        margin-top: 0.6rem;
     }
     
 }
