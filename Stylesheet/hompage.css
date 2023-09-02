@@ -11,9 +11,15 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F9FAFB;
     padding: 0px;
     margin: 0px;
+}
+h1, h2, h3{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
 }
 .main{
     width: 100%;
@@ -80,7 +86,7 @@ body{
     text-align: center;
     color: var(--dark-color);
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 .main-heading>p{
     font-size: 0.75rem;
@@ -434,22 +440,33 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     margin-bottom: 3.6875rem;
+    width: 100%;
+    gap: 1rem;
+}
+.sublogo{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .air{
     justify-self: center;
+    width: 100%;
 }
 .out{
     justify-self: center;
+    width: 100%;
 }
 .razo{
     justify-self: center;
+    width: 100%;
 }
 .discord{
-    justify-self: end;
+    justify-self: center;
+    width: 63%;
 }
 .drop{
-    grid-column: 3 / 4;
-    justify-self: start;
+    justify-self: center;
+    width: 63%;
 }
 .blogs-wrapper{
     text-align: center;
@@ -618,14 +635,15 @@ footer{
     margin-bottom: 0.812rem;
     border-bottom: 1px solid var(--white-color);
 }
-.footer-list li{
+.footer-list>ul>li{
     display: inline-block;
-    padding-left:1.25rem;
     font-size: 1rem;
+    padding-left: 0rem;
 }
 .footer-list a{
     text-decoration: none;
     color: var(--white-color);
+    padding-left: 1.25rem;
 }
 .icon>p{
     font-size: 0.75rem;
@@ -663,13 +681,14 @@ footer{
         justify-content: space-between;
         padding: 1rem 1.5rem;
     }
-    .new, .active{
-        width: 33%;
+    .new, .active, .satisfied{
+        width: 33.3%;
         border-right: 1px solid var(--border-color);
         border-bottom: none;
     }
     .satisfied{
         border-bottom: none;
+        border-right: none;
     }
     .feat{
         font-size: 1rem;
@@ -778,12 +797,14 @@ footer{
     }
     .testimonial-content>h2{
         font-size: 1.5rem;
+        font-weight: 400;
     }
     .testimonial-content>h3{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
     .testimonial-content>nav{
-        margin-top: 1.12rem;
+        margin-top: 1.125rem;
     }
     .blogs-wrapper>button{
         font-size: 1rem;
@@ -924,12 +945,127 @@ footer{
         padding: 8rem;
     }
 }
-@media (min-width:1000px){
+@media (min-width:1200px){
+    .main{
+        padding: 0.5rem 6.9375rem;
+    }
     .heading{
         font-size: 1.25rem;
     }
     .main-head>img{
         margin-top: 0.6rem;
     }
-    
+    .menu-list>ul>li{
+        margin-right: 1rem;
+    }
+    .heading.h1{
+        font-size: 1.25rem;
+    }
+    .main-heading>h2{
+        font-size: 4.5rem;
+        margin-top: 4rem;
+        line-height: 5.4rem;
+    }
+    .hero-image{
+        width: 100%;
+        height: 21.125rem;
+    }
+    .hero-image>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 16rem;
+        margin-bottom: 3rem;
+    }
+    .users{
+        background-color: var(--white-color);
+    }
+    .num{
+        font-size: 3rem;
+    }
+    .detail{
+        font-size: 1.5rem;
+    }
+    .feature{
+        margin-top: 6.25rem;
+    }
+    .feature>h1{
+        font-size: 3rem;
+        margin-bottom: 1.25rem;
+    }
+    .content-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--white-color);
+    }
+    .content-wrapper img{
+        width: 2.125rem;
+        height: 2.125rem;
+    }
+    .interface{
+        display: block;
+        margin-top: 0rem;
+        padding-top: 1.25rem;
+        border-left: 1px solid var(--border-color);
+    }
+    .mission{
+        background-color: var(--white-color);
+        margin-bottom: 6.25rem;
+    }
+    .mission>.image{
+        width: 40%;
+        height: 10rem;
+        float: right;
+    }
+    .image>img{
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+    }
+    .mission>h1{
+        width: 55%;
+        float: left;
+    }
+    .mission>p{
+        float: left;
+        width: 55%;
+    }
+    .mission-action{
+        clear: both;
+    }
+    .client{
+        margin-bottom: 3.125rem;
+    }
+    .client>h1{
+        font-size: 3rem;
+    }
+    .logo-wrapper{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 6.25rem;
+    }
+    .elastic{
+        justify-self: center;
+    }
+    .loom{
+        grid-column: 5 / 6;
+        justify-self: center;
+    }
+    .testimonial-section{
+        margin-bottom: 6.25rem;
+    }
+    .testimonial-section>h1{
+        font-size: 3rem;
+    }
+    .testimonial-content{
+        padding: 4.125rem 2.468rem 2.875rem 2.468rem;
+    }
+    .testimonial-image{
+        width: 55%;
+        margin-right: 2.875rem;
+        float: left;
+    }
+    .company-logo{
+        width: 65%;
+        margin: auto;
+    }
 }
