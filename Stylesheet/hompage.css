@@ -26,6 +26,10 @@ p{
     padding: 32px 8px 32px 8px ;
     margin: 0px;
 }
+.head-container, .feat-container, .mission-container, .client-container, .testimonial-container, .blogs-container, .subscribe-container, .footer-container{
+    max-width: 1280px;
+    margin-inline: auto;
+}
 .main-head{
     display: inline-flex;
     width: 100%;
@@ -35,7 +39,8 @@ p{
     border-radius: 47px;
 }
 .main-head>img{
-    margin-top: 0.25rem;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 14px;
     object-fit: cover;
 }
@@ -58,11 +63,13 @@ p{
 .heading{
     color: var(--white-color);
     font-weight: 700;
-    font-size: 0.669rem;
     height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .heading>h1{
     margin: 0rem;
+    font-size: 0.669rem;
 }
 .menu{
     margin-left: auto;
@@ -208,6 +215,7 @@ p{
     line-height: 1.366rem;
     color: var(--gray-color);
     padding-bottom: 5.125rem;
+    margin-bottom: 0rem;
 }
 .connectivity{
     background-image: radial-gradient(#E9D8FF, #FFFFFF00, #E9D8FF00);
@@ -248,6 +256,9 @@ p{
     color: var(--gray-color);
     padding-bottom: 2rem;
 }
+.view{
+    display: none;
+}
 .view button{
     border-radius: 1.25rem;
     border: 2px solid var(--purple-color);
@@ -258,9 +269,6 @@ p{
     color: var(--white-color);
     background-color: var(--purple-color);
     display: none;
-}
-.view p1{
-    font-size: 1rem;
 }
 .view a{
     display: none;
@@ -494,6 +502,15 @@ hr{
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+.blogs-3{
+    display: none;
+    width: 100%;
+    padding: 1.25rem;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
 .blogs-1>img{
     object-fit: cover;
     width: 100%;
@@ -501,6 +518,12 @@ hr{
     margin-bottom: 1.25rem;
 }
 .blogs-2>img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+}
+.blogs-3>img{
     object-fit: cover;
     width: 100%;
     border-radius: 1rem;
@@ -667,7 +690,7 @@ footer{
         height: 20px;
         width: 24px;
     }
-    .heading{
+    .heading>h1{
         font-size: 0.75rem;
     }
     .hero-image{
@@ -867,11 +890,10 @@ footer{
     .main{
         padding:1rem 2rem ;
     }
-    .heading{
-        font-size: 1rem;
+    .heading>h1{
+        font-size: 1.25rem;
     }
     .main-head>img{
-        margin-top: 0.4rem;
         height: 1.5rem;
         width: 1.75rem;
     }
@@ -913,6 +935,7 @@ footer{
     }
     .mission{
         margin-bottom: 5rem;
+        padding: 2.6875rem 1rem;
     }
     .mission>h1{
         font-size: 2.25rem;
@@ -945,16 +968,14 @@ footer{
         padding: 8rem;
     }
 }
-@media (min-width:1200px){
+@media (min-width:1000px){
     .main{
         padding: 0.5rem 6.9375rem;
     }
-    .heading{
+    .heading>h1{
         font-size: 1.25rem;
     }
-    .main-head>img{
-        margin-top: 0.6rem;
-    }
+    
     .menu-list>ul>li{
         margin-right: 1rem;
     }
@@ -981,6 +1002,7 @@ footer{
     }
     .num{
         font-size: 3rem;
+        font-weight: 600;
     }
     .detail{
         font-size: 1.5rem;
@@ -1013,12 +1035,12 @@ footer{
     }
     .mission>.image{
         width: 40%;
-        height: 10rem;
+        height: 20rem;
         float: right;
     }
     .image>img{
         width: 100%;
-        height: 200%;
+        height: 100%;
         object-fit: cover;
     }
     .mission>h1{
@@ -1028,9 +1050,11 @@ footer{
     .mission>p{
         float: left;
         width: 55%;
+        margin-top: 0rem;
     }
     .mission-action{
-        clear: both;
+        width: 55%;
+        margin-right: 0rem;
     }
     .client{
         margin-bottom: 3.125rem;
@@ -1067,5 +1091,12 @@ footer{
     .company-logo{
         width: 65%;
         margin: auto;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .blogs-3{
+        display: block;
     }
 }
