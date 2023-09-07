@@ -6,6 +6,7 @@
     --light-color: #EEE2FE;
     --border-color:#EFF0F6;
     --dark-gray: #8B857F;
+    --light-purple:#C7A0F9;
 }
 *{
     box-sizing: border-box;
@@ -22,13 +23,17 @@ p{
     font-family: 'Manrope', sans-serif;
 }
 .main{
-    width: 100%;
-    padding: 32px 8px 32px 8px ;
-    margin: 0px;
-}
-.head-container, .feat-container, .mission-container, .client-container, .testimonial-container, .blogs-container, .subscribe-container, .footer-container{
     max-width: 1280px;
     margin-inline: auto;
+    /*padding: 32px 8px 32px 8px ;
+    margin: 0px;*/
+}
+.head-container, .feat-container, .mission-container, .client-container, .testimonial-container, .blogs-container, .subscribe-container{
+    max-width: 1060px;
+    margin-inline: auto;
+}
+.footer-container{
+    width: 100%;
 }
 .main-head{
     display: inline-flex;
@@ -66,13 +71,14 @@ p{
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 5px;
 }
 .heading>h1{
     margin: 0rem;
     font-size: 0.669rem;
 }
 .menu{
-    margin-left: auto;
+    width: fit-content;
     height: fit-content;   
 }
 .menu>button{
@@ -411,12 +417,39 @@ p{
     margin-top: 0rem;
 }
 .testimonial-content>nav{
-    text-align: right;
-    margin-top: 0.9375rem;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    justify-items: flex-end;
+    margin-left: auto;
 }
-.testimonial-content>nav>i{
-    height: 1.25rem;
-    width: 1.25rem;
+.right-arrow{
+    display: flex;
+    border-radius: 50%;
+    width: 37.8px;
+    height: 37.8px;
+    background-color: var(--purple-color);
+}
+.left-arrow{
+    display: flex;
+    border-radius: 50%;
+    width: 37.8px;
+    height: 37.8px;
+    border: 1px solid var(--purple-color);
+}
+.right-arrow>img{
+    width: 20.6px;
+    height: 20.6px;
+    flex-grow: 1;
+    justify-self: center;
+    align-self: center;
+}
+.left-arrow>img{
+    width: 20.6px;
+    height: 20.6px;
+    flex-grow: 1;
+    justify-self: center;
+    align-self: center;
 }
 .trusted{
     margin-bottom: 1.5rem;
@@ -440,7 +473,7 @@ hr{
     height: 1px;
     margin: 0rem;
     position: relative;
-    top: 0.5rem;
+    top: 0.7rem;
     z-index: -1;
 }
 .company-logo{
@@ -491,39 +524,24 @@ hr{
 }
 .blogs-wrapper>h1{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 0rem;
 }
-.blogs-1, .blogs-2{
+.blogs-1{
     width: 100%;
+    height: 100%;
     padding: 1.25rem;
     text-align: left;
     border: 1px solid var(--border-color);
     border-radius: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-.blogs-3{
+.blogs-extra{
     display: none;
-    width: 100%;
-    padding: 1.25rem;
-    text-align: left;
-    border: 1px solid var(--border-color);
-    border-radius: 1rem;
-    margin-bottom: 1rem;
 }
 .blogs-1>img{
-    object-fit: cover;
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1.25rem;
-}
-.blogs-2>img{
-    object-fit: cover;
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1.25rem;
-}
-.blogs-3>img{
     object-fit: cover;
     width: 100%;
     border-radius: 1rem;
@@ -535,7 +553,8 @@ hr{
     color: var(--white-color);
     padding: 0.25rem 0.5rem;
     border-radius: 2.9375rem;
-    background-color: var(--purple-color);
+    background-color: var(--light-purple);
+    align-self: flex-start;
 }
 .blogs-wrapper h2{
     font-size: 1.25rem;
@@ -546,6 +565,7 @@ hr{
     font-size: 1rem;
     font-weight: 400;
     color: var(--gray-color);
+    flex-grow: 1;
 }
 .read-more{
     width: 100%;
@@ -590,15 +610,17 @@ hr{
     object-fit: cover;
     border-radius: 2rem;
 }
-.sub{
+.sub-container{
+    min-width: 290px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+}
+.sub{
     color: var(--white-color);
     text-align: center;
     width: 100%;
-    padding: 0.75rem;
 }
 .sub>h3{
     font-size: 1.25rem;
@@ -609,8 +631,6 @@ hr{
     font-size: 0.75rem;
     font-weight: 400;
     margin-top: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     margin-bottom: 1rem;
 }
 .sub>input{
@@ -846,7 +866,7 @@ footer{
     .sub>img{
         width: 3.625rem;
         height: 3.5rem;
-        margin-bottom: 2.125rem;
+        margin-bottom: 3.125rem;
     }
     .sub>h3{
         font-size: 2rem;
@@ -856,9 +876,6 @@ footer{
     .sub>p{
         font-size: 1.25rem;
         margin-bottom: 3.125rem;
-    }
-    .sub{
-        padding: 4rem;
     }
     footer{
         padding:2.5rem 4.25rem 2rem 4.45rem;
@@ -960,12 +977,13 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.875rem;
+        min-height: auto;
+    }
+    .sub-container{
+        width: 520px;
     }
     .sub>h3{
         font-size: 3rem;
-    }
-    .sub{
-        padding: 8rem;
     }
 }
 @media (min-width:1000px){
@@ -1084,9 +1102,27 @@ footer{
         padding: 4.125rem 2.468rem 2.875rem 2.468rem;
     }
     .testimonial-image{
-        width: 55%;
-        margin-right: 2.875rem;
+        margin-bottom: 0rem;
+        width: 45%;
         float: left;
+    }
+    .testimonial-content>p{
+        width: 50%;
+        float: right;
+    }
+    .testimonial-content>h2{
+        width: 50%;
+        clear: right;
+        float: right;
+    }
+    .testimonial-content>h3{
+        width: 50%;
+        clear: right;
+        float: right;
+    }
+    .testimonial-content>nav{
+        margin-top: 0rem;
+        clear: left;
     }
     .company-logo{
         width: 65%;
@@ -1096,7 +1132,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .blogs-3{
+    .blogs-extra{
         display: block;
     }
 }

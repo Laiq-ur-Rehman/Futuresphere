@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Homepage</title>
     <link rel="stylesheet" href="Stylesheet/hompage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Roboto&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet"></head>
 <body>
     <div class="main">
         <div class="head-container">
@@ -139,8 +140,12 @@
                     <h2>Sarah Thompson</h2>
                     <h3>CEO Thompson Enterprises</h3>
                     <nav>
-                        <i class="fa-regular fa-circle-left" style="color: #7f56d9;"></i>
-                        <i class="fa-solid fa-circle-arrow-right" style="color: #7f56d9;"></i>
+                        <div class="left-arrow">
+                            <img src="Images/arrow-left.svg" alt="">
+                        </div>
+                        <div class="right-arrow">
+                            <img src="Images/arrow-right.svg" alt="">
+                        </div>
                     </nav>
                 </div>
                 <div class="trusted">
@@ -167,12 +172,12 @@
                         <img src="Images/Blogs.jpeg" alt="">
                         <a href="#" class="blog-action">Healthcare</a>
                         <h2>The Future of AI in Healthcare: Transforming Patient Care</h2>
-                        <p> Explore the incredible potential of artificial intelligence (AI) in revolutionizing healthcare. Discover how AI-driven technologies are enhancing diagnostics, personalized medicine, and patient outcomes. Dive into real-world examples and gain insights into the future of healthcare.</p>   
+                        <p>Explore the incredible potential of artificial intelligence (AI) in revolutionizing healthcare. Discover how AI-driven technologies are enhancing diagnostics, personalized medicine, and patient outcomes. Dive into real-world examples and gain insights into the future of healthcare.</p>   
                         <div class="read-more">
                             <a href="#" class="read">Read more</a>
                         </div>
                     </div>
-                    <div class="blogs-2">
+                    <div class="blogs-1">
                         <img src="Images/Blogs.jpeg" alt="">
                         <a href="#" class="blog-action">Healthcare</a>
                         <h2>The Future of AI in Healthcare: Transforming Patient Care</h2>
@@ -181,7 +186,8 @@
                             <a href="#" class="read">Read more</a>
                         </div>
                     </div>
-                    <div class="blogs-3">
+                    <div class="blogs-extra">
+                    <div class="blogs-1">
                         <img src="Images/Blogs.jpeg" alt="">
                         <a href="#" class="blog-action">Healthcare</a>
                         <h2>The Future of AI in Healthcare: Transforming Patient Care</h2>
@@ -190,6 +196,7 @@
                             <a href="#" class="read">Read more</a>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -200,12 +207,14 @@
         <div class="subscribe-container">
             <div class="subscribe">
                 <img src="Images/Subscribe.svg" alt="">
-                <div class="sub">
-                    <img src="Images/Envelop.svg" alt="">
-                    <h3>Do cool things with us.</h3>
-                    <p>Stay in the loop with updates from our team and community. Once a month.</p>
-                    <input type="email" name="name" value="" placeholder="Enter your email"/><br><br>
-                    <button>Subscribe to newsletter</button>
+                <div class="sub-container">
+                    <div class="sub">
+                        <img src="Images/Envelop.svg" alt="">
+                        <h3>Do cool things with us.</h3>
+                        <p>Stay in the loop with updates from our team and community. Once a month.</p>
+                        <input type="email" name="name" value="" placeholder="Enter your email"/><br><br>
+                        <button>Subscribe to newsletter</button>
+                    </div>
                 </div>
             </div>
         </div>  
