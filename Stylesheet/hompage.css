@@ -1011,7 +1011,7 @@ footer>img{
         font-size: 3rem;
     }
 }
-@media (min-width:1000px){
+@media (min-width:1200px){
     .main{
         padding: 0.5rem 6.9375rem;
     }
