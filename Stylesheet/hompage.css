@@ -34,6 +34,7 @@ p{
 }
 .footer-container{
     width: 100%;
+    min-height: 220px;
 }
 .main-head{
     display: inline-flex;
@@ -277,6 +278,7 @@ p{
     display: none;
 }
 .view a{
+    color: #1B152B;
     display: none;
     text-decoration: none;
     width: fit-content;
@@ -405,6 +407,7 @@ p{
     height: 100%;
 }
 .testimonial-content>p{
+    font-family: 'Inter', sans-serif ;;
     font-size: 1rem;
     color: var(--gray-color);
     line-height: 1.21rem;
@@ -562,6 +565,7 @@ hr{
     margin-bottom: 0.9375rem;
 }
 .blogs-wrapper p{
+    font-family: 'Inter', sans-serif ;
     font-size: 1rem;
     font-weight: 400;
     color: var(--gray-color);
@@ -592,6 +596,7 @@ hr{
     border: 2px solid var(--purple-color);
 }
 .action-view>a{
+    color: #1B152B;
     padding-right: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
@@ -653,29 +658,45 @@ hr{
     border: 2px solid var(--purple-color);
 }
 footer{
+    min-height: 220px;
     margin-top: 2.5rem;
     background-color: var(--purple-color);
-    padding: 3.68rem 1.375rem 2rem 1.375rem;
+    position: relative;
+}
+footer>img{
+    width: 100%;
+    min-height: 220px;
+    object-fit: cover;
+}
+.footer{
+    position: absolute;
+    top: 30%;
+    left: 05%;
+    width: 90%;   
 }
 .footer-heading{
+    height: 63px;
     display: flex;
+    gap: 05px;
     border-top: 1px solid var(--white-color);
 }
 .footer-heading>h1{
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--white-color);
+    align-self: center;
 }
 .footer-heading>img{
     width: 1.7rem;
     height: 1.5rem;
-    margin-top: 0.75rem;
+    align-self: center;
 }
 .footer-list>ul{
     list-style-type: none;
     padding-left: 0rem;
     padding-bottom: 1.375rem;
-    margin-bottom: 0.812rem;
+    margin-bottom: 1.375;
+    margin-top: 0rem;
     border-bottom: 1px solid var(--white-color);
 }
 .footer-list>ul>li{
@@ -877,9 +898,6 @@ footer{
         font-size: 1.25rem;
         margin-bottom: 3.125rem;
     }
-    footer{
-        padding:2.5rem 4.25rem 2rem 4.45rem;
-    }
     .footer-heading{
         float: left;
         border: none;
@@ -887,6 +905,9 @@ footer{
     .footer-list{
         text-align: right;
         border-top: 1px solid var(--white-color);
+    }
+    .footer-list>ul{
+        padding-top: 1.37rem;
     }
     .footer-list li{
         padding-left: 0.5rem;
@@ -961,6 +982,7 @@ footer{
     }
     .mission>p{
         font-size: 1rem;
+        line-height: 1.5rem;
     }
     .client>h1{
         font-size: 2.25rem;
@@ -1053,8 +1075,9 @@ footer{
     }
     .mission>.image{
         width: 40%;
-        height: 20rem;
+        height: 428px;
         float: right;
+        margin-top: 0rem;
     }
     .image>img{
         width: 100%;
