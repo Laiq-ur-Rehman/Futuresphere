@@ -280,13 +280,15 @@ p{
     width: fit-content;
     color: var(--white-color);
     background-color: var(--purple-color);
-    display: none;
 }
-.view a{
+.view>a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
     color: #1B152B;
-    display: none;
     text-decoration: none;
-    width: fit-content;
+}
+.view>a>p{
     font-family: 'Inter', sans-serif;
 }
 .mission{
@@ -610,15 +612,16 @@ hr{
 }
 .action-view>a{
     color: #1B152B;
-    padding-right: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
 }
+.action-view>a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
 .action-view p{
     font-family: 'Inter', sans-serif;
-}
-.action-view button, .view a{
-    display: block;
 }
 .subscribe{
     width: 100%;
@@ -663,6 +666,7 @@ hr{
     margin-bottom: 6px;
     border: 2px solid var(--white-color);
     width: 100%;
+    outline: none;
 }
 .input>input::placeholder{
     font-size: 0.875rem;
@@ -825,9 +829,6 @@ footer>img{
         align-items: center;
         justify-content: center;
         margin-bottom: 5rem;
-    }
-    .view button, .view a{
-        display: block;
     }
     .view a:hover{
         cursor: pointer;
