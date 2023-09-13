@@ -29,8 +29,8 @@ p{
     margin-inline: auto;
 }
 .head-container, .feat-container, .mission-container, .client-container, .testimonial-container, .blogs-container, .subscribe-container{
-    max-width: 1018px;
-    margin-inline: auto;
+    width: 100%;
+    margin: 0rem;
 }
 .footer-container{
     width: 100%;
@@ -885,7 +885,7 @@ footer>img{
     .content-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 1.93rem 2.06rem;
+        padding: 1.93rem 0rem;
         margin-bottom: 1.875rem;
     }
     .interface{
@@ -900,6 +900,7 @@ footer>img{
     }
     .innovation, .connectivity{
         border-bottom: none;
+        padding: 0rem;
     }
     .view{
         display: flex;
