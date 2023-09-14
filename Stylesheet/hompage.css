@@ -896,7 +896,6 @@ footer>img{
         font-size: 1rem;
         margin-bottom: 3.125rem;
     }
-    
     .view{
         display: flex;
         align-items: center;
@@ -1026,11 +1025,11 @@ footer>img{
         margin-left: 1.25rem;
     }
 }
-@container (width>590px){
+@media (min-width:734px){
     .content-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 1.93rem 0rem;
+        padding: 47px 0px;
         margin-bottom: 1.875rem;
     }
     .interface{
@@ -1098,12 +1097,6 @@ footer>img{
     .feature>h1{
         font-size: 2.25rem;
     }
-    .content-wrapper{
-        padding: 47px 30px;
-    }
-    .innovation, .connectivity, .interface{
-        padding: 20px;
-    }
     .mission{
         margin-bottom: 5rem;
         padding: 2.6875rem 1rem;
@@ -1157,6 +1150,14 @@ footer>img{
     }
     .sub>h3{
         font-size: 3rem;
+    }
+}
+@media (min-width:898px){
+    .content-wrapper{
+        padding: 47px 30px;
+    }
+    .innovation, .connectivity, .interface{
+        padding: 20px;
     }
 }
 @media (min-width:1100px){
