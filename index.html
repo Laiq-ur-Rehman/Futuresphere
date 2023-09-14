@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet"></head>
 <body>
     <div class="main">
-        <div class="head-container">
+        <div class="container head-container">
             <Header>
                 <div class="main-head">
                     <div class="first-heading">
@@ -22,32 +22,40 @@
                             <h1>FutureSphere</h1>
                         </div>
                     </div>
-                    <div class="menu-list">
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Blogs</a></li>
-                            <li><a href="">Pricing</a></li>
-                        </ul>
-                    </div>
                     <div class="menu">
-                        <button>Contact Us</button>
-                        <div class="sidebarmenu">
-                            <div class="top"></div>
-                            <div class="middle"></div>
-                            <div class="low"></div>
-                            <div class="sidebar-menu-list">
+                        <input type="checkbox" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                            <div class="spinner top"></div>
+                            <div class="spinner middle"></div>
+                            <div class="spinner bottom"></div>
+                        </label>
+                        <div class="dropdown">
+                            <div class="menu-list-dropdown">
                                 <ul>
                                     <li><a href="">About</a></li>
                                     <li><a href="">Careers</a></li>
                                     <li><a href="">Blogs</a></li>
                                     <li><a href="">Pricing</a></li>
-                                    <li><button class="sign-action">Signup</button>
-                                        <button class="contact">Contact Us</button></li>
                                 </ul>
                             </div>
-                        </div>
+                            <div class="dropdown-nav-button">
+                                <button>Contact Us</button>
+                            </div>
+                        </div>  
                     </div>
+                    <nav class="navbarmenu">
+                        <div class="menu-list">
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Blogs</a></li>
+                                <li><a href="">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-button">
+                            <button>Contact Us</button>
+                        </div>
+                    </nav>
                 </div>
             </Header>
             <div class="main-heading">
@@ -88,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <div class="feat-container">
+        <div class="container feat-container">
             <div class="feature">
                 <button class="feat">Features</button>
                 <h1>Discover the Tools that Drive Success</h1>
@@ -116,7 +124,7 @@
                 <a href="#"><p>View All</p> <i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </div>
-        <div class="mission-container">
+        <div class="container mission-container">
             <div class="mission">
                 <button class="statement">Our Mission Statement</button>
                 <div class="image">
@@ -130,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="client-container">
+        <div class="container client-container">
             <div class="client">
                 <button>Our Clients</button>
                 <h1>Trusted by Industry Leaders</h1>
@@ -144,7 +152,7 @@
                 <img src="Images/loom.png" alt="" class="loom">
             </div>
         </div>
-        <div class="testimonial-container">
+        <div class="container testimonial-container">
             <div class="testimonial-section">
                 <button>Testimonials</button>
                 <h1>1M+ Global Customers</h1>
@@ -179,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="blogs-container">
+        <div class="container blogs-container">
             <div class="blogs-wrapper">
                 <button>Blogs</button>
                 <h1>From our latest blogs</h1>
@@ -220,7 +228,7 @@
             <button>Contact Us</button>
             <a href="#"><p>View All</p> <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        <div class="subscribe-container">
+        <div class="container subscribe-container">
             <div class="subscribe">
                 <img src="Images/Subscribe.svg" alt="">
                 <div class="sub-container">
@@ -237,7 +245,7 @@
             </div>
         </div>  
     </div>
-    <div class="footer-container">
+    <div class="container footer-container">
         <footer>
             <img src="Images/Footer-design.svg" alt="">
             <div class="footer">

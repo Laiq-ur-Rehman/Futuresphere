@@ -24,13 +24,14 @@ p{
 }
 .main{
     padding: 1rem 0rem;
-    max-width: 1920px;
+    max-width: 1280px;
     width: 80%;
     margin-inline: auto;
 }
-.head-container, .feat-container, .mission-container, .client-container, .testimonial-container, .blogs-container, .subscribe-container{
+.container{
+    max-width: 1016px;
+    margin-inline: auto;
     width: 100%;
-    margin: 0rem;
 }
 .footer-container{
     width: 100%;
@@ -57,25 +58,7 @@ p{
     height: 14px;
     object-fit: cover;
 }
-.menu-list{
-    align-self: center;
-    display: none;
-}
-.menu-list ul{
-    padding: 0rem;
-    margin: 0rem;
-}
-.menu-list a{
-    text-decoration: none;
-    color: var(--white-color);
-}
-.menu-list li{
-    font-size: 1rem;
-    list-style-type: none;
-    display: inline;
-}
 .heading{
-    flex-grow: 1;
     color: var(--white-color);
     font-weight: 700;
     height: fit-content;
@@ -86,105 +69,133 @@ p{
     margin: 0rem;
     font-size: 0.669rem;
 }
-.menu{
-    width: fit-content;
-    height: fit-content;   
+nav{
+    width: 60%;
+    display: none;
+    justify-content: space-between;
 }
-.sidebarmenu{
-    width: 24px;
-}
-.top{
-    border: 1px solid var(--purple-color);
-    margin-top: 2px;
-    border-radius: 4px;
-}
-.middle{
-    width: 70%;
-    border: 1px solid var(--purple-color);
-    margin: 5px 0px;
-    border-radius: 4px;
-}
-.low{
-    border: 1px solid var(--purple-color);
-    margin-bottom: 2px;
-    border-radius: 4px;
-}
-header{
-    position: relative;
-}
-.sidebar-menu-list{
-    width: 100%;
-    max-width: 768px;
-    background-color: var(--dark-color);
-    border-radius: 10px;
-    z-index: -2;
-    display: none; 
-}
-.sidebar-menu-list>ul{
-    background-color: var(--dark-color);
-    list-style-type: none;
-    border-radius: 10px;
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left:0px;
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-}
-.sidebar-menu-list li{
-    padding: 10px 0px;
+.menu-list{
+    height: fit-content;
     flex-grow: 1;
-    justify-self: flex-start;   
+    align-self: center;
 }
-.sign-action{
-    border-radius: 1.25rem;
-    border: 2px solid var(--purple-color);
-    padding: 0.3125rem 0.6875rem;
-    font-size: 0.75rem;
-    width: fit-content;
-    color: var(--white-color);
-    background-color: var(--purple-color);
+.menu-list ul{
+    display: flex;
+    gap: 1rem;
+    padding: 0rem;
+    margin: 0rem;
 }
-.sidebar-menu-list a{
+.menu-list a{
     text-decoration: none;
-    margin-inline: auto;
     color: var(--white-color);
-    padding: 10px;
-    text-decoration: 1px underline var(--white-color);
-    text-underline-offset: 10px;
 }
-.openSidebarMenu:hover{
-    margin-bottom: 8px;
+.menu-list li{
+    font-size: 1rem;
+    list-style-type: none;
 }
-.sidebarmenu:hover .sidebar-menu-list{
-    display: block;
-}
-.sidebarmenu:hover .top{
-    margin-top: 10px;
-    rotate: 45deg;
-}
-.sidebarmenu:hover .low{
-    margin-top: -14.5px;
-    rotate: -45deg;
-}
-.sidebarmenu:hover .middle{
-    opacity: 0;
-}
-.menu>button{
+.nav-button>button{
     text-align: center;
     border-radius: 1.25rem;
-    padding: 0.5rem 1.875rem;
+    padding: 0.5rem 0.8rem;
     margin: 0rem;
     font-size: 1rem;
     font-weight: 400;
     color: var(--white-color);
     background-color: var(--purple-color);
     border: 2px solid var(--purple-color);
+    display: block;
+}
+.menu{   
+    width: 24px;   
+}
+.spinner{
+    transition: all 0.3s;
+}
+.top{
+    margin-top: 2px;
+}
+.middle{
+    margin: 5px 0px;
+}
+#openSidebarMenu{
     display: none;
+}
+.top, .bottom{
+    width: 100%;
+    border: 1px solid var(--purple-color);
+}
+.middle{
+    width: 70%;
+    border: 1px solid var(--purple-color);
+}
+header{
+    position: relative;
+}
+.dropdown{
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.3s ease-in;  
+}
+.dropdown-nav-button>button{
+    border-radius: 1.25rem;
+    border: 2px solid var(--purple-color);
+    padding: 0.3125rem 1.875rem;
+    font-size: 0.75rem;
+    width: fit-content;
+    color: var(--white-color);
+    background-color: var(--purple-color);
+    margin-left: 0.9375rem;
+}
+.menu-list-dropdown{
+    width: 90%;
+    margin-inline: auto;
+}
+.dropdown-nav-button{
+    width: fit-content;
+    margin-inline: auto; 
+}
+.menu-list-dropdown>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0rem;
+    flex-grow: 1;
+}
+.menu-list-dropdown li{
+    border-bottom: 1px solid var(--white-color);
+    display: block;
+}
+.menu-list-dropdown a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    display: block;
+    padding: 20px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle>.top{
+    rotate: 45deg;
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle>.bottom{
+    rotate: -45deg;
+    margin-top: -14px;
+    margin-bottom: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle>.middle{
+    opacity: 0%;
+}
+#openSidebarMenu:checked ~ .dropdown{
+    display: flex;
 }
 .main-heading>h2{
     font-size: 2rem;
@@ -201,7 +212,7 @@ header{
     color: var(--gray-color);
     text-align: center;
 }
-.action, .sidebaraction{
+.action{
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -900,7 +911,7 @@ footer>img{
     }
     .innovation, .connectivity{
         border-bottom: none;
-        padding: 0rem;
+        padding: 5px;
     }
     .view{
         display: flex;
@@ -1032,13 +1043,8 @@ footer>img{
     }
 }
 @media (min-width:768px){
-    .menu-list{
-        display: inline;
-        height: fit-content;
-    }
-    .menu-list>ul{
+    nav{
         display: flex;
-        gap: 1rem;
     }
     .heading>h1{
         font-size: 1.25rem;
@@ -1050,11 +1056,10 @@ footer>img{
     .sidebarmenu{
         display: none;
     }
-    .menu>button{
+    .nav-button>button{
         display: block;
-        margin-top: 0.2rem;
     }
-    .menu>img{
+    .menu{
         display: none;
     }
     .main-heading>h2{
@@ -1086,6 +1091,12 @@ footer>img{
     }
     .feature>h1{
         font-size: 2.25rem;
+    }
+    .content-wrapper{
+        padding: 47px 30px;
+    }
+    .innovation, .connectivity, .interface{
+        padding: 20px;
     }
     .mission{
         margin-bottom: 5rem;
@@ -1149,6 +1160,9 @@ footer>img{
     .heading.h1{
         font-size: 1.25rem;
     }
+    .nav-button>button{
+        padding: 0.5rem 1.875rem;
+    }
     .main-heading>h2{
         font-size: 4.5rem;
         margin-top: 4rem;
@@ -1191,10 +1205,12 @@ footer>img{
         width: 2.125rem;
         height: 2.125rem;
     }
+    .content-wrapper{
+        padding: 47px 65px;
+    }
     .interface{
         display: block;
         margin-top: 0rem;
-        padding-top: 1.25rem;
         border-left: 1px solid var(--border-color);
     }
     .mission{
