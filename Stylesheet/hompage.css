@@ -1026,7 +1026,7 @@ footer>img{
         margin-left: 1.25rem;
     }
 }
-@container(min-width:590px){
+@container (width>590px){
     .content-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
