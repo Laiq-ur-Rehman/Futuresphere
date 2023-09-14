@@ -39,6 +39,9 @@ p{
     margin-inline: auto;
     min-height: 220px;
 }
+.container{
+    container-type: inline-size;
+}
 .main-head{
     display:flex;
     justify-content: space-between;
@@ -893,26 +896,7 @@ footer>img{
         font-size: 1rem;
         margin-bottom: 3.125rem;
     }
-    .content-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 1.93rem 0rem;
-        margin-bottom: 1.875rem;
-    }
-    .interface{
-        display: none;
-    }
-    .innovation>p, .connectivity>p{
-        padding-bottom: 2.5rem;
-    }
-    .connectivity{
-        margin-top: 0rem;
-        border-left: 1px solid var(--border-color);
-    }
-    .innovation, .connectivity{
-        border-bottom: none;
-        padding: 5px;
-    }
+    
     .view{
         display: flex;
         align-items: center;
@@ -1041,6 +1025,28 @@ footer>img{
     .icons>i{
         margin-left: 1.25rem;
     }
+}
+@container(min-width:590px){
+    .content-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.93rem 0rem;
+        margin-bottom: 1.875rem;
+    }
+    .interface{
+        display: none;
+    }
+    .innovation>p, .connectivity>p{
+        padding-bottom: 2.5rem;
+    }
+    .connectivity{
+        margin-top: 0rem;
+        border-left: 1px solid var(--border-color);
+    }
+    .innovation, .connectivity{
+        border-bottom: none;
+        padding: 5px;
+    } 
 }
 @media (min-width:768px){
     nav{
